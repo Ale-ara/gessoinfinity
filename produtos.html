@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos | Gesso Infinity</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/produtos.css">
+</head>
+
+<body>
+
+  <!-- LOADER TRANSIÇÃO -->
+<div id="page-loader">
+  <div class="infinity-loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header-content">
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Gesso Infinity">
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Início</a>
+
+      <div class="dropdown">
+        <span class="active">Produtos</span>
+        <div class="dropdown-menu">
+          <a href="produtos.html?categoria=placas">Placas de Drywall</a>
+          <a href="produtos.html?categoria=estruturas">Estruturas</a>
+          <a href="produtos.html?categoria=acessorios">Acessórios</a>
+        </div>
+      </div>
+
+      <a href="empresa.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5521999999999" target="_blank" class="btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      Solicitar orçamento
+    </a>
+
+  </div>
+</header>
+
+<!-- ================= MENU MOBILE ================= -->
+<div class="menu-mobile" id="menuMobile">
+
+  <a href="index.html" class="menu-link">Início</a>
+
+  <div class="menu-dropdown">
+    <button class="menu-dropdown-btn" id="mobileProductsBtn">
+      Produtos
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="menu-dropdown-list">
+      <a href="produtos.html?categoria=placas">Placas de Drywall</a>
+      <a href="produtos.html?categoria=estruturas">Estruturas Metálicas</a>
+      <a href="produtos.html?categoria=acessorios">Acessórios</a>
+    </div>
+  </div>
+
+  <a href="empresa.html" class="menu-link">Quem somos</a>
+  <a href="contato.html" class="menu-link">Contato</a>
+
+  <a href="https://wa.me/5521999999999" target="_blank" class="menu-cta">
+    Solicitar orçamento
+  </a>
+
+</div>
+
+<!-- ✅ OVERLAY (OBRIGATÓRIO) -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<!-- ================= HERO ================= -->
+<section class="produtos-hero">
+  <div class="container">
+    <h1>Nossos Produtos</h1>
+    <p>Materiais profissionais para drywall, steel frame e acabamentos.</p>
+  </div>
+</section>
+
+<!-- ================= CONTEÚDO ================= -->
+<section class="produtos-page">
+  <div class="container produtos-layout">
+
+    <!-- FILTRO -->
+    <aside class="filtro">
+
+      <button class="filtro-toggle" id="filtroToggle">
+        <i class="fa-solid fa-sliders"></i>
+        Filtrar produtos
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </button>
+
+      <div class="filtro-conteudo" id="filtroConteudo">
+        <button class="filtro-btn active" data-filter="todos">Todos</button>
+        <button class="filtro-btn" data-filter="placas">Placas de Drywall</button>
+        <button class="filtro-btn" data-filter="estruturas">Estruturas</button>
+        <button class="filtro-btn" data-filter="acessorios">Acessórios</button>
+      </div>
+
+    </aside>
+
+    <!-- GRID -->
+<div class="produtos-grid">
+
+  <!-- ================= PLACAS ================= -->
+  <a href="produtos/placa-standard.html" class="produto-card" data-category="placas">
+    <img src="assets/images/categorias/placa-standard.jpg" alt="Placa Drywall Standard">
+    <h3>Placa Drywall Standard</h3>
+    <p>Uso interno e áreas secas</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/placa-ru.html" class="produto-card" data-category="placas">
+    <img src="assets/images/categorias/placa-ru.jpg" alt="Placa Drywall RU">
+    <h3>Placa Drywall RU</h3>
+    <p>Resistente à umidade</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/placa-rf.html" class="produto-card" data-category="placas">
+    <img src="assets/images/categorias/placa-rf.jpg" alt="Placa Drywall RF">
+    <h3>Placa Drywall RF</h3>
+    <p>Resistente ao fogo</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <!-- ================= ESTRUTURAS ================= -->
+  <a href="produtos/estrutura-cantoneira-25x30.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/cantoneira-25x30.jpg" alt="Cantoneira 25x30">
+    <h3>Cantoneira 25x30</h3>
+    <p>Proteção e acabamento de quinas</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-cantoneira-perfurada.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/cantoneira-perfurada.jpg" alt="Cantoneira Perfurada">
+    <h3>Cantoneira Perfurada</h3>
+    <p>Melhor aderência ao reboco</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-guia-48.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/guia-48.jpg" alt="Guia 48">
+    <h3>Guia 48</h3>
+    <p>Base da estrutura drywall</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-guia-70.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/guia-70.jpg" alt="Guia 70">
+    <h3>Guia 70</h3>
+    <p>Estrutura para paredes robustas</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-guia-90.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/guia-90.jpg" alt="Guia 90">
+    <h3>Guia 90</h3>
+    <p>Paredes técnicas e shafts</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-montante-48.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/montante-48.jpg" alt="Montante 48">
+    <h3>Montante 48</h3>
+    <p>Perfil vertical da estrutura</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-montante-70.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/montante-70.jpeg" alt="Montante 70">
+    <h3>Montante 70</h3>
+    <p>Maior robustez estrutural</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-montante-90.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/montante-90.jpg" alt="Montante 90">
+    <h3>Montante 90</h3>
+    <p>Estruturas largas e técnicas</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-f530.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/perfil-f-530.png" alt="Perfil F-530">
+    <h3>Perfil F-530</h3>
+    <p>Estrutura para forros</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-tirante.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/tirante3m.jpg" alt="Tirante">
+    <h3>Tirante 3M</h3>
+    <p>Nivelamento de forros</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-tirante.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/tirante1m.jpg" alt="Tirante">
+    <h3>Tirante 1M</h3>
+    <p>Nivelamento de forros</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+  <a href="produtos/estrutura-tabica-lisa.html" class="produto-card" data-category="estruturas">
+    <img src="assets/images/tabica-lisa.jpg" alt="Tabica Lisa">
+    <h3>Tabica Lisa</h3>
+    <p>Acabamento perimetral</p>
+    <span class="produto-cta">Ver detalhes →</span>
+  </a>
+
+<a href="produtos/acessorio-fincapino-am27.html" class="produto-card" data-category="acessorios">
+  <img src="assets/images/fincapino-am27.jpg" alt="Fincapino Ação Indireta AM27">
+  <h3>Fincapino Ação Indireta AM27</h3>
+  <p>Fixação rápida em concreto e aço (carga média)</p>
+  <span class="produto-cta">Ver detalhes →</span>
+</a>
+
+
+</div>
+
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- COLUNA LOGO -->
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Gesso Infinity" class="footer-logo">
+      <p>
+        Materiais para drywall com entrega rápida em todo o Rio de Janeiro.
+      </p>
+    </div>
+
+    <!-- COLUNA LINKS -->
+    <div class="footer-links">
+      <h4>Institucional</h4>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="empresa.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+    <!-- COLUNA CONTATO -->
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <p><strong>Telefone:</strong> (21) 99999-9999</p>
+      <p><strong>Atendimento:</strong> Todo o RJ</p>
+
+      <a 
+        href="https://wa.me/5521999999999" 
+        target="_blank" 
+        class="footer-whatsapp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        Falar no WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Gesso Infinity. Todos os direitos reservados.
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

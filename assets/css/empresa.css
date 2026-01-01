@@ -1,0 +1,129 @@
+/* HERO */
+.empresa-hero {
+  padding: 140px 0 90px;
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+              url("../images/hero-2.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.empresa-tag {
+  display: inline-block;
+  background: rgba(255,255,255,.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: .85rem;
+  margin-bottom: 12px;
+}
+
+.empresa-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+}
+
+.empresa-hero p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  opacity: .95;
+}
+
+/* HISTÓRIA */
+.empresa-historia {
+  padding: 100px 0;
+}
+
+.empresa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.empresa-texto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.empresa-destaques {
+  margin-top: 20px;
+}
+
+.empresa-destaques li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.empresa-imagem img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0,0,0,.12);
+}
+
+/* VALORES */
+.empresa-valores {
+  background: #f6f8fa;
+  padding: 90px 0;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 30px;
+}
+
+.valor-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.valor-card i {
+  font-size: 32px;
+  color: #25d366;
+  margin-bottom: 14px;
+}
+
+/* MAPA */
+.empresa-mapa {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.mapa-wrapper {
+  margin-top: 30px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+}
+
+/* CTA */
+.empresa-cta {
+  background: #0b2a3d;
+  color: #fff;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.empresa-cta p {
+  opacity: .9;
+  margin-bottom: 26px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .empresa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .empresa-hero h1 {
+    font-size: 2.1rem;
+  }
+}
