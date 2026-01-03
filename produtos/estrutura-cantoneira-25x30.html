@@ -35,13 +35,16 @@
   <a href="../index.html">Início</a>
 
   <div class="dropdown">
-    <span>Produtos</span>
-    <div class="dropdown-menu">
-      <a href="../produtos.html?categoria=placas">Placas de Drywall</a>
-      <a href="../produtos.html?categoria=estruturas">Estruturas Metálicas</a>
-      <a href="../produtos.html?categoria=acessorios">Acessórios</a>
-    </div>
+  <a href="../produtos.html" class="dropdown-link">
+    Produtos
+  </a>
+
+  <div class="dropdown-menu">
+    <a href="../produtos.html?categoria=placas">Placas de Drywall</a>
+    <a href="../produtos.html?categoria=estruturas">Estruturas Metálicas</a>
+    <a href="../produtos.html?categoria=acessorios">Acessórios</a>
   </div>
+</div>
 
   <a href="../empresa.html">Quem somos</a>
   <a href="../contato.html">Contato</a>
@@ -201,15 +204,17 @@
 </footer>
 
 
-<!-- ================= WHATSAPP FIXO ================= -->
+<!-- ================= WHATSAPP FLUTUANTE ================= -->
 <a 
-  href="https://wa.me/5521966660877"
-  target="_blank"
+  href="https://wa.me/5521966660877" 
+  target="_blank" 
   class="whatsapp-fixo"
-  id="whatsappFix"
+  aria-label="Falar no WhatsApp"
 >
+  <div class="whatsapp-balao">
+    Fale conosco no WhatsApp
+  </div>
   <i class="fa-brands fa-whatsapp"></i>
-  <span class="whatsapp-balao">Olá! Precisa de ajuda?</span>
 </a>
 
 
